@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "FaceHate",
+	"description": "Modifies HTTP headers in Facebook requests",
+	"version": "1.0",
+
+	"icons": {
+    	"48": "icon48.png",
+    	"128": "icon128.png"},
+
+	"browser_action": {
+		"default_icon": "icon16.png",
+		"default_title": "FaceHate",
+		"default_popup": "popup.html"},
+
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://*/*"],
+
+	"background": {
+		"scripts": 
+			["background.js"]
+	}
+}

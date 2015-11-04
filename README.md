@@ -7,3 +7,5 @@ FaceHate was created as a proof of concept extension for Google Chrome to modify
 - Referer 
 in the HTTP packets sent to Facebook servers. 
 
+The problem is that user cannot login to Facebook (it is obvious as the cookies are changed). 
+However it would be great to add functionality to the extension, such that when user browse the Internet (non-Facebook page) the headers are changed, if 

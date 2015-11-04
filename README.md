@@ -2,10 +2,13 @@
 Google Chrome extension for modifying HTTP headers in web requests to Facebook  
 
 FaceHate was created as a proof of concept extension for Google Chrome to modify HTTP headers:
-- User Agent
+- User Agent (UA)
 - Cookie
 - Referer 
-in the HTTP packets sent to Facebook servers. 
+in the HTTP packets sent to Facebook servers (ro increase privacy). 
 
-The problem is that user cannot login to Facebook (it is obvious as the cookies are changed). 
-However it would be great to add functionality to the extension, such that when user browse the Internet (non-Facebook page) the headers are changed, if 
+The problem is that user cannot login to Facebook (it is obvious as the cookies are constantly changed). 
+However it would be great to add functionality to the extension, such that when user browse the Internet (non-Facebook page) all headers are changed, if user navigates to Facebook portal - only UA is changed. 
+
+The extension is based on chrome.webRequest API. I tried to combine it with chrome.Tabs API to get the URL from address bar and use it as condition in handler. It did not work as the API is asynchronous. 
+I also tried to c
